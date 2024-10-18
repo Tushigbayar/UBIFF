@@ -59,3 +59,31 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
+
+    let likebtn = document.querySelector('#likebtn');
+    let dislikebtn = document.querySelector('#dislikebtn');
+    let input1 = document.querySelector('#input1');
+    let input2 = document.querySelector('#input2');
+    
+    let input3 = document.querySelector('#input3');
+    let input4 = document.querySelector('#input4');
+    
+    
+    likebtn.addEventListener('click', ()=>{
+        input1.value = parseInt(input1.value) + 1;
+        input1.style.color = "#00008B";
+    })
+
+    dislikebtn.addEventListener('click', ()=>{
+        input2.value = parseInt(input2.value) + 1;
+        input2.style.color = "#ff0000";
+    })
+    likebtn.addEventListener('click', ()=>{
+        input3.value = parseInt(input3.value) + 1;
+        input3.style.color = "#00008B";
+    })
+
+    dislikebtn.addEventListener('click', ()=>{
+        input4.value = parseInt(input4.value) + 1;
+        input4.style.color = "#ff0000";
+    })
